@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f1eb">
+  <meta name="description" content="فروشگاه آنلاین گل ریرا؛ گل‌های تازه برای لحظه‌های خاص">
+  <title>ریرا فلاور | فروشگاه گل</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">زیبایی را به لحظه‌هایت هدیه بده 🌷</div>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">✿</span><span>rira<span class="brand-light">_flower</span><small>FLOWERS & LITTLE JOYS</small></span></a>
+    <nav><a href="#products">محصولات</a><a href="#story">درباره ما</a><a href="#contact">تماس</a></nav>
+    <button class="cart-button" id="cartOpen" aria-label="سبد خرید">سبد خرید <span id="cartCount">۰</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">FLOWERS MAKE DAYS BRIGHTER</p>
+        <h1>برای هر حس قشنگی،<br><em>یک دسته گل</em> هست.</h1>
+        <p class="hero-text">گل‌های تازه و باطراوت برای تولدها، قدردانی‌ها و تمام لحظه‌هایی که ارزش جشن گرفتن دارند.</p>
+        <a class="primary-link" href="#products">دیدن گل‌ها <span>←</span></a>
+        <div class="hero-note"><span>✳</span> با عشق آماده می‌شود، با لبخند هدیه داده می‌شود.</div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="floating-tag">fresh flowers<br><b>every day</b></div>
+        <span class="decor decor-one">✿</span><span class="decor decor-two">✳</span>
+      </div>
+    </section>
+
+    <section class="trust-row">
+      <div><b>✿</b><span>گل‌های تازه و دست‌چین</span></div>
+      <div><b>♡</b><span>چیدمان با سلیقه و عشق</span></div>
+      <div><b>✧</b><span>مناسب هدیه دادن</span></div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading"><div><p class="eyebrow">OUR FLOWER COLLECTION</p><h2>انتخابی برای حال خوب</h2></div><p>هر گل، قصه‌ای برای گفتن دارد.</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">همه گل‌ها</button>
+        <button class="filter" data-filter="bouquet">دسته گل</button>
+        <button class="filter" data-filter="box">باکس گل</button>
+        <button class="filter" data-filter="plant">گیاه آپارتمانی</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-art"><div class="story-photo"></div><span>made<br>with love ♡</span></div>
+      <div><p class="eyebrow">A LITTLE ABOUT RIRA</p><h2>گل‌ها زبانِ<br><em>بی‌کلامِ عشق‌اند.</em></h2><p>در ریرا فلاور باور داریم یک دسته گل ساده می‌تواند روز کسی را روشن‌تر کند. ما اینجا هستیم تا برای لحظه‌های کوچک و بزرگ زندگی، انتخابی پر از حس خوب داشته باشی.</p><a href="#contact" class="text-link">با ما در ارتباط باش ←</a></div>
+    </section>
+
+    <section class="newsletter" id="contact"><p class="eyebrow">SAY HELLO</p><h2>برای سفارش یا پرسش، با ما در تماس باش.</h2><p>اطلاعات تماس و شبکه اجتماعی فروشگاهت را اینجا قرار بده.</p><a class="primary-link" id="contactLink" href="mailto:hello@example.com">ارتباط با ریرا <span>←</span></a></section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-mark">✿</span><span>rira<span class="brand-light">_flower</span></span></a><span>© <span id="year"></span> Rira Flower · ساخته‌شده با عشق</span><a href="#top">بازگشت به بالا ↑</a></footer>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-panel">
+      <div class="cart-head"><h3>سبد خرید تو</h3><button id="cartClose" aria-label="بستن">×</button></div>
+      <div id="cartItems" class="cart-items"><p class="empty-cart">هنوز گلی انتخاب نکردی 🌱</p></div>
+      <div class="cart-bottom"><div class="total"><span>جمع کل</span><b id="cartTotal">۰ تومان</b></div><button class="checkout" id="checkout">ثبت درخواست سفارش</button><small>این نسخه نمایشی است؛ برای دریافت سفارش واقعی باید راه ارتباطی و فرایند پرداخت را تنظیم کنی.</small></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
